@@ -1,0 +1,7 @@
+services:
+  signalr-chat:
+    build: .
+    container_name: signalr-chat
+    ports:
+      - "5000:80"
+    restart: unless-stopped
